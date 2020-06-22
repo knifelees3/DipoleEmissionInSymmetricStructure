@@ -7,10 +7,17 @@ The original motivation is to write a program to fit the experimental data and t
 
 I think this program can also do other things so I will continue develop this program and may use machine learning to fit the angle.
 
-
-
 # Update Log
 
 ## 2020 03 23 
 
-Create the respository first and upload the program first.
+Create the repository first and upload the program first.
+
+
+
+## 2020 06 22
+
+The theoretical derivations for this code is updated in my personal blog:
+
+[Dipole's Emission In Multi-Layered Structure](https://knifelees3.github.io/2020/06/22/A_En_DipoleInMultiLayerCartesian/#Relations-of-amplitudes-in-different-layers)
+
