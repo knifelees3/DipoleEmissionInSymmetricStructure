@@ -1,9 +1,12 @@
+
+"""
 # BFP Image Calculations of QD in Multi-layered structure
 
-# This is to calculate the BFP image for a given material and given
-# kx,ky distribution. Once kx,ky are given, then the pattern can be calclated.
+This is to calculate the BFP image for a given material and given
+kx,ky distribution. Once kx,ky are given, then the pattern can be calclated.
 
 # The description of this class can be found in the file "ReadMe.md"
+"""
 
 # %%
 # Import offical package

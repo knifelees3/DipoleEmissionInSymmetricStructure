@@ -1,8 +1,6 @@
-# introduction
+# Introduction
 
 This is to store the theoretical methods for calculating the dipole in some structures with rotation symmetry or translation symmetry.
-
-
 
 ## Dipole in free space
 

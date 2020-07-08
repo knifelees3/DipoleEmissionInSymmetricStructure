@@ -12,10 +12,19 @@ Dipole's emission in arbitrary media can't be described theoretically but when t
 
 I will calculate the following case:
 
-1.   Dipole in free space.
-2. Dipole near sphere.
+1. Dipole in free space .
+
+2. Dipole near sphere (Notes can be found here [Dipole’s emission near sphere](https://knifelees3.github.io/2020/06/20/A_En_DipoleEmissionNearSphere/#Introduction)).
+
+   ![](https://raw.githubusercontent.com/knifelees3/my_pictures/master/picgoup/20200107214942441_16601.png)
+
 3. Dipole in multi layered structures.
-4. Dipole near waveguide.
+
+   ![](https://raw.githubusercontent.com/knifelees3/my_pictures/master/picgoup/20200223215829792_1734.jpg)
+
+![](https://raw.githubusercontent.com/knifelees3/DipoleEmissionInSymmetricStructure/master/02-Dipole-In-Multilayer/Figures/picture__TestBFP1KrhoKphi_p0_-0.14_0.24_0.96_.png)
+
+1.   Dipole near waveguide.
 
 
 
