@@ -21,3 +21,14 @@ The theoretical derivations for this code is updated in my personal blog:
 
 [Dipole's Emission In Multi-Layered Structure](https://knifelees3.github.io/2020/06/22/A_En_DipoleInMultiLayerCartesian/#Relations-of-amplitudes-in-different-layers)
 
+## 2020 07 19
+
+* A verification of this program with the reference is added into this folder.
+
+![]("./PythonProgram/Figures/VerifyChenStr3DRho.png")
+
+The corresponding file name is 
+
+"Verify_Chen_NatPhoton.ipynb"
+
+* The corresponding MATLAB code is also generated.

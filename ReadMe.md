@@ -22,8 +22,6 @@ I will calculate the following case:
 
    ![](https://raw.githubusercontent.com/knifelees3/my_pictures/master/picgoup/20200223215829792_1734.jpg)
 
-![](https://raw.githubusercontent.com/knifelees3/DipoleEmissionInSymmetricStructure/master/02-Dipole-In-Multilayer/Figures/picture__TestBFP1KrhoKphi_p0_-0.14_0.24_0.96_.png)
-
 1.   Dipole near waveguide.
 
 
