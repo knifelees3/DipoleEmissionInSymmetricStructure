@@ -13,8 +13,6 @@ I think this program can also do other things so I will continue develop this pr
 
 Create the repository first and upload the program first.
 
-
-
 ## 2020 06 22
 
 The theoretical derivations for this code is updated in my personal blog:
@@ -24,8 +22,6 @@ The theoretical derivations for this code is updated in my personal blog:
 ## 2020 07 19
 
 * A verification of this program with the reference is added into this folder.
-
-![]("./PythonProgram/Figures/VerifyChenStr3DRho.png")
 
 The corresponding file name is 
 
