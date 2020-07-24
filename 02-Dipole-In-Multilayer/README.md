@@ -1,4 +1,5 @@
 # Dipole-Emission-In-Multilayer
+
 ## Motivation
 
 To calculate the dipole's emission rate and emission pattern in multilayered structure. Since the multilayer structure has translation symmetry in two directions, the dipole's emission properties can be described theoretically. 
@@ -8,6 +9,7 @@ The original motivation is to write a program to fit the experimental data and t
 I think this program can also do other things so I will continue develop this program and may use machine learning to fit the angle.
 
 ## Jupyter File List
+
 I list the corresponding jupyer file here
 
 [RunAllFunctions.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/RunAllFunctions.ipynb)
