@@ -7,6 +7,12 @@ The original motivation is to write a program to fit the experimental data and t
 
 I think this program can also do other things so I will continue develop this program and may use machine learning to fit the angle.
 
+## Jupyter File List
+I list the corresponding jupyer file here
+
+[RunAllFunctions.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/RunAllFunctions.ipynb)
+[Verify_ChenNatPhoton.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/Verify_ChenNatPhoton.ipynb)
+
 # Update Log
 
 ## 2020 03 23 
