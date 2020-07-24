@@ -27,4 +27,8 @@ The corresponding file name is
 
 "Verify_Chen_NatPhoton.ipynb"
 
+You can read the Jupyter files here
+
+[Verify_ChenNatPhoton.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/Verify_ChenNatPhoton.ipynb)
+
 * The corresponding MATLAB code is also generated.
