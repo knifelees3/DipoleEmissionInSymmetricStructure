@@ -11,6 +11,7 @@ I think this program can also do other things so I will continue develop this pr
 I list the corresponding jupyer file here
 
 [RunAllFunctions.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/RunAllFunctions.ipynb)
+
 [Verify_ChenNatPhoton.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/Verify_ChenNatPhoton.ipynb)
 
 # Update Log
@@ -37,4 +38,4 @@ You can read the Jupyter files here
 
 [Verify_ChenNatPhoton.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/Verify_ChenNatPhoton.ipynb)
 
-* The corresponding MATLAB code is also generated.
+* The corresponding MATLAB code is also generated
