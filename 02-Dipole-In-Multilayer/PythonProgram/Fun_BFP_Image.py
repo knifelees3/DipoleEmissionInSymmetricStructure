@@ -512,3 +512,33 @@ def Plot_Whole_Compare(kx_grid, ky_grid, BFP_Exp, BFP_Fit, kx, ky, BFP_Exp_Rho, 
     Plot_Single_1D_Compare(kx, BFP_Exp_Rho, BFP_Fit_Rho, angle0, 'BFP_Rho')
     Plot_Single_1D_Compare(ky, BFP_Exp_Phi, BFP_Fit_Phi, angle0, 'BFP_Phi')
     return 0
+
+# To plot the structure we care
+
+
+def Show_Structure(Eplist, dl, WL0, nUp, nDn, POSD):
+
+    x = np.ones(10)
+
+    # Obtain the thickness
+    dis_ext = (dl[-1] - dl[0]) / (nUp + nDn + 1)
+    dlext = np.ravel(np.vstack((dl[0] - dis_ext, dl[:], dl[-1] + dis_ext)))
+
+    fig1 = plt.figure()
+    for l in range(nUp + nDn):
+        plt.plot(x * dl[l] * 1e9)
+    plt.ylim((dlext[0] * 1e9, dlext[-1] * 1e9))
+
+    for l in range(nUp + nDn + 1):
+        strname = 'permitivity=' + str(Eplist[l, 0])
+        plt.text(4, (dlext[l] + dlext[l + 1]) * 1e9 / 2, strname)
+    plt.ylabel('Z (nm)')
+    plt.xlabel('X Direction')
+    plt.scatter(4, POSD * 1e9, s=5, marker="o")
+    titlestr = 'Structure with dipole wavelength ' + str(WL0 * 1e9) + 'nm'
+    plt.title(titlestr)
+    filename = './Figures/Structure' + '.png'
+    plt.savefig(filename)
+    plt.show()
+
+    return 0
