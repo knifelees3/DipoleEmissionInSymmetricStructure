@@ -42,3 +42,17 @@ for dipole near waveguide, only when the cross section has rotation symmetry the
 
 
 ## Update Log
+
+### 2020 09 20
+
+For the "02-Dipole-In-Multilayer"
+
+Create the structure visualization function named `Show_Structure`. This function was written in the file "Fun_BFP_Image.py" and added in the end of class file "class_BFP_Image_QD.py". The corresponding test note book also updated.
+
+[RunAllFunctions.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/RunAllFunctions.ipynb)
+
+You can see the updated note book here
+
+[RunAllFunctions.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/RunAllFunctions.ipynb)
+
+Now we can see the structure via a simple plot.

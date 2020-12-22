@@ -41,3 +41,15 @@ You can read the Jupyter files here
 [Verify_ChenNatPhoton.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/Verify_ChenNatPhoton.ipynb)
 
 * The corresponding MATLAB code is also generated
+
+## 2020 09 20
+
+Create the structure visualization function named `Show_Structure`. This function was written in the file "Fun_BFP_Image.py" and added in the end of class file "class_BFP_Image_QD.py". The corresponding test note book also updated.
+
+[RunAllFunctions.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/RunAllFunctions.ipynb)
+
+You can see the updated note book here
+
+[RunAllFunctions.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/RunAllFunctions.ipynb)
+
+Now we can see the structure via a simple plot.

@@ -430,3 +430,7 @@ class BFP_Image_QD:
         Pattern_Rho, Pattern_Phi = self.Cal_RhoPhi_Dis(Pattern_RhoPhi)
 
         return Pattern_Rho, Pattern_Phi
+
+    # Part V Structure visualization part
+    def Show_Structure(self):
+        Fun_BFP_Image.Show_Structure(self.Eplist, self.dl, self.WL0, self.nUp, self.nDn, self.POSD)

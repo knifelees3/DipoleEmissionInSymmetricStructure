@@ -211,24 +211,3 @@ print("Total simulation time is:", str(end - start))
 
 np.savetxt("./data/ptz_meep_ortho.txt", ptz)
 np.savetxt("./data/ptx_meep_para.txt", ptx)
-
-
-# # %%
-# pt = np.reshape(pt_mat, (num_dis, nfrq))
-# npt = np.zeros((num_dis, nfrq))
-# for l in range(nfrq):
-#     npt[:, l] = pt[:, l]/p0_flux[l]
-
-# np.savetxt("./data/npt_meep_ortho.txt", npt)
-# np.savetxt("./data/p0_flux.txt", p0_flux)
-
-
-# # %%
-# get_ipython().run_line_magic('matplotlib', 'inline')
-# plt.figure(dpi=100)
-# plt.plot(dis_mat, npt[:, 0])
-# plt.plot(dis_mat, npt[:, 1])
-# plt.plot(dis_mat, npt[:, 2])
-# plt.xlabel('dis/um')
-# plt.ylabel('normalized power ortho dipole')
-# plt.savefig("./data/dipole_sphere_ortho.png")
