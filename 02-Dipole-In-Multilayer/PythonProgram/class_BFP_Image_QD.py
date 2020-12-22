@@ -9,7 +9,7 @@ kx,ky distribution. Once kx,ky are given, then the pattern can be calclated.
 """
 
 # %%
-# Import offical package
+# Import commerical package
 import numpy as np
 import datetime
 from scipy.optimize import curve_fit
@@ -21,7 +21,7 @@ import Fun_BFP_Image
 
 # ______________________________________________________________________________
 # %%
-# The definition of the Clas
+# The definition of the Class
 class BFP_Image_QD:
     # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     # **********************************Initialize Parameters*****************
@@ -90,6 +90,8 @@ class BFP_Image_QD:
 
         # The clock number
         self.count = 0
+
+
 # Check the correctness of the initialization
 
     def __check_input(self, Eplist, dl, nUp, nDn):
@@ -114,6 +116,9 @@ class BFP_Image_QD:
 # *******************************************************************
 # ___________________________________________________________________
 
+# To calculate the R_{s/p} in different interface
+
+
     def Cal_RSP(self, klz):
         num_dl = self.num_dl
         Eplist = self.Eplist
@@ -125,6 +130,9 @@ class BFP_Image_QD:
             Fun_BFP_Image.Cal_RSP(num_dl, Eplist, dl, nUp, nDn, klz)
 
         return RSUp, RPUp, RSDn, RPDn, RS12, RP12, RS21, RP21
+
+
+# To calculate the Green function
 
     def Cal_Green(self, RSUp, RPUp, RSDn, RPDn, RS12, RP12, RS21, RP21, kx, ky, klz):
         nUp = self.nUp
@@ -142,6 +150,7 @@ class BFP_Image_QD:
 
         return GreenSUp_Far, GreenPUp_Far, GreenSDn_Far, GreenPDn_Far
 
+# To calculate the electric field when the Green function is given
     def Cal_Elec_Field(self, GreenSUp, GreenPUp, GreenSDn, GreenPDn):
         p0 = self.p0
         omega = self.omega
@@ -153,6 +162,7 @@ class BFP_Image_QD:
 
         return ESUp_Far, EPUp_Far, ESDn_Far, EPDn_Far
 
+# To calculate the emission pattern for a given elecric field
     def Cal_Pattern(self, ESUp, EPUp, ESDn, EPDn, theta_Up, theta_Dn):
 
         epsilon0 = self.epsilon0
@@ -167,6 +177,7 @@ class BFP_Image_QD:
         nPatternDn = PatternDn / np.max(PatternDn)
         return nPatternUp, nPatternDn
 
+# To calculate the dipole orientation when the 2D dipole's angle is given
     def Cal_Dipole_From_Angle(self, angle):
         alpha = angle[0]
         phi_1 = angle[1]
@@ -192,7 +203,7 @@ class BFP_Image_QD:
 # Part II Pattern Function Part
 # ****************************************************************************
 # __________________________________________________________________________________________
-#   Single Pattern Cal with single kx,ky
+#   Single Pattern Cal with single kx,ky and a given p0
     def Cal_Pattern_Single_p0(self, kx, ky, p0):
 
         self.p0 = p0
@@ -218,6 +229,8 @@ class BFP_Image_QD:
         nPatternDn = PatternDn / np.max(PatternDn)
 
         return nPatternUp, nPatternDn
+
+#  Single Pattern Cal with single kx,ky and a given 2D angle
 
     def Cal_Pattern_single_QD(self, kx, ky, angle):
         p1, p2 = self.Cal_Dipole_From_Angle(angle)
