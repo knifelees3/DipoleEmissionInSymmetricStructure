@@ -56,3 +56,11 @@ You can see the updated note book here
 [RunAllFunctions.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/RunAllFunctions.ipynb)
 
 Now we can see the structure via a simple plot.
+
+
+
+### 2020 06 29
+
+I create new MATLAB code and new python code for the dipole on substrate structures.
+
+[RunAllFunctions.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/DipoleEmissiononSub.ipynb)
