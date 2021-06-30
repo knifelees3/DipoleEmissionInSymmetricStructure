@@ -53,7 +53,7 @@ num_ky = 200;
 k0 = 2 * pi / WL0;
 kl = k0 * sqrt(Eplist);
 ke=k0*sqrt(Eplist(num_layer));
-NA=1.4564;
+NA=1.4579;
 k0NA= k0 * NA;
 
 %# The length to calculate the far field. However this is not needed if the

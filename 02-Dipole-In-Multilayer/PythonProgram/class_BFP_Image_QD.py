@@ -310,6 +310,44 @@ class BFP_Image_QD:
         nPattern = Pattern / np.max(Pattern)
         return nPattern
 
+
+
+    # To calculate the pattern for a given dipole moment where the green function is prepared
+    # For a given p1
+    # The upper and lower pattern will both be simulated
+    def Cal_Pattern_List_QD_p1(self, p1):
+
+        ESUp = np.zeros((self.num_kx, self.num_ky, 3), dtype=complex)
+        EPUp = np.zeros((self.num_kx, self.num_ky, 3), dtype=complex)
+        ESDn = np.zeros((self.num_kx, self.num_ky, 3), dtype=complex)
+        EPDn = np.zeros((self.num_kx, self.num_ky, 3), dtype=complex)
+
+        for l in range(3):
+            ESUp[:, :, l] = 1j * self.omega * self.mu0 * \
+                (self.GreenSUp[l, 0, :, :] * p1[0] + self.GreenSUp[l,
+                                                                   1, :, :] * p1[1] + self.GreenSUp[l, 2, :, :] * p1[2])
+            EPUp[:, :, l] = 1j * self.omega * self.mu0 * \
+                (self.GreenPUp[l, 0, :, :] * p1[0] + self.GreenPUp[l,
+                                                                   1, :, :] * p1[1] + self.GreenPUp[l, 2, :, :] * p1[2])
+            ESDn[:, :, l] = 1j * self.omega * self.mu0 * \
+                (self.GreenSDn[l, 0, :, :] * p1[0] + self.GreenSDn[l,
+                                                                   1, :, :] * p1[1] + self.GreenSDn[l, 2, :, :] * p1[2])
+            EPDn[:, :, l] = 1j * self.omega * self.mu0 * \
+                (self.GreenPDn[l, 0, :, :] * p1[0] + self.GreenPDn[l,
+                                                                   1, :, :] * p1[1] + self.GreenPDn[l, 2, :, :] * p1[2])
+
+
+        # Cal the emission pattern
+        PatternUpS = (np.abs(ESUp[:, :, 0])**2 + np.abs(ESUp[:, :, 1])**2 + np.abs(ESUp[:, :, 2])**2) * np.abs(np.cos(self.theta_Up[:, :]))**2
+        PatternUpP = (np.abs(EPUp[:, :, 0])**2 + np.abs(EPUp[:, :, 1])**2 + np.abs(EPUp[:, :, 2])**2) * np.abs(np.cos(self.theta_Up[:, :]))**2
+        PatternDnS = (np.abs(ESDn[:, :, 0])**2 + np.abs(ESDn[:, :, 1])**2 + np.abs(ESDn[:, :, 2])**2) * np.abs(np.cos(self.theta_Dn[:, :]))**2
+        PatternDnP = (np.abs(EPDn[:, :, 0])**2 + np.abs(EPDn[:, :, 1])**2 + np.abs(EPDn[:, :, 2])**2) * np.abs(np.cos(self.theta_Dn[:, :]))**2
+        PatternUp = PatternUpS + PatternUpP
+        PatternDn = PatternDnS + PatternDnP
+        nPatternUp = PatternUp / np.max(PatternUp)
+        nPatternDn = PatternDn / np.max(PatternDn)
+        return nPatternUp,nPatternDn
+
     # For a given angle
     def Cal_PatternUp_List_QD_Angle(self, alpha, phi_1, phi_2):
         angle = [alpha, phi_1, phi_2]

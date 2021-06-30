@@ -64,3 +64,22 @@ Now we can see the structure via a simple plot.
 I create new MATLAB code and new python code for the dipole on substrate structures.
 
 [RunAllFunctions.ipynb](https://nbviewer.jupyter.org/github/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/DipoleEmissiononSub.ipynb)
+
+
+
+### 2020 06 30
+
+Created a new function named  `Cal_Pattern_List_QD_p1` to lot the pattern of single dipole.  The comparison between MATLAB and python are done and agree well with each other.
+
+![](https://github.com/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/PythonProgram/Figures/PatternfordipoleoindexsubPython.png)
+
+![](https://github.com/knifelees3/DipoleEmissionInSymmetricStructure/blob/master/02-Dipole-In-Multilayer/MATLAB_Program/V1.4_MATLAB/PatternfordipoleoindexsubMATLAB.png)
+
+
+
+
+
+
+
+
+

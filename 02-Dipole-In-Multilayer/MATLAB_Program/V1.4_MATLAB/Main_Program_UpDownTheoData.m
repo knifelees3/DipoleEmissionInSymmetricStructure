@@ -67,3 +67,6 @@ subplot(235)
 pcolor(uxtheo_grid,uytheo_grid,patdyDown);shading interp;colormap('jet');xlabel('ux');ylabel('uy');title('Dy Down');
 subplot(236)
 pcolor(uxtheo_grid,uytheo_grid,patdzDown);shading interp;colormap('jet');xlabel('ux');ylabel('uy');title('Dz Down');
+sgtitle('MATLAB Program')
+set(gcf,'position',[100 100 1200 800])
+print('./PatternfordipoleoindexsubMATLAB.png','-dpng')
