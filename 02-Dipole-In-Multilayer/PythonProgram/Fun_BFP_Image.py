@@ -156,10 +156,11 @@ def Cal_Green(nUp, nDn, num_layer, dl, POSD, dUpFar, dDnFar, RSUp, RPUp, RSDn, R
     SSUpA[2, 2, :] = 0
 
     SSUpA = SSUpA / (kx**2 + ky**2)
-
+    
     SSUpB[:, :, :] = SSUpA
-    SSDnB[:, :, :] = SSUpA
-    SSDnA[:, :, :] = SSUpA
+    for l in range(nDn+1):
+        SSDnB[:, :, l] = SSUpA[:,:,1]
+        SSDnA[:, :, l] = SSUpA[:,:,1]
 
     #  ************************************************************************************************************
     #  Matrix for the p polarized light
